@@ -7,16 +7,21 @@ import Enquiry from './components/Enquiry';
 import Login from './components/Login'
 import Signup from './components/Signup';
 
+import {AuthListener} from './auth'
+import Profile from './components/Profile';
+
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Services" element={<Services />} />
-        <Route path="/Enquiry" element={<Enquiry />} />
+        <Route path="/" element={<AuthListener />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/enquiry" element={<Enquiry />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
   );
