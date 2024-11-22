@@ -1,14 +1,20 @@
-import React from 'react'
-import NavBar from './NavBar'
-import Footer from './Footer'
+import React from 'react';
+import { Hero } from './about/Hero';
+import { Mission } from './about/Mission';
+import { Team } from './about/Team';
+import Footer from './Footer';
+import NavBar from './Navbar';
 
-export default function About() {
+function App() {
   return (
-    <>
-      <NavBar/>
-        <div>About</div>
-      <Footer/>
-    </>
-  )
+    <div className="min-h-screen">
+      <NavBar />
+      <Hero />
+      <Mission />
+      <Team />
+      <Footer />
+    </div>
+  );
 }
 
+export default App;

@@ -1,13 +1,16 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom';
+import { AuthListener } from '../auth';
 
 function NavBar() {
+	AuthListener();
+
 	const navigate = useNavigate();
   return (
       <>
 <body className="bg-blue-500">
 	<nav className="relative px-8 py-4 flex justify-between items-center bg-white">
-		<img className='h-10' src={'./src/assets/logo.png'} />
+		<img className='h-10 cursor-pointer' src={'./src/assets/logo.png'} onClick={() => {navigate('/')}}/>
 		<div className="lg:hidden">
 			<button className="navbar-burger flex items-center text-blue-600 p-3">
 				<svg className="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +43,7 @@ function NavBar() {
 		<img className='h-10 cursor-pointer'
 				
 				onClick={() => {
-                    navigate('/signup')
+                    navigate('/profile')
                   }} 
 				  src={'./src/assets/user.png'} 
 

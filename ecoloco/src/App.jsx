@@ -14,8 +14,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<AuthListener />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/enquiry" element={<Enquiry />} />
