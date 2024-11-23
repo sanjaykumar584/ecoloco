@@ -6,9 +6,11 @@ import Services from './components/Services';
 import Enquiry from './components/Enquiry';
 import Login from './components/Login'
 import Signup from './components/Signup';
+import PackageDesc from './components/PackageDesc';
 
 import {AuthListener} from './auth'
 import Profile from './components/Profile';
+import Packages from './components/Packages';
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/packdesc" element={<PackageDesc />} />
+        <Route path="/packs" element={<Packages />} />
       </Routes>
     </Router>
   );
