@@ -1,0 +1,46 @@
+@layer base {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  @layer components {
+    .btn-primary {
+      @apply bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors;
+    }
+  }
+
+  @layer base {
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      @apply text-gray-900 bg-white;
+    }
+  }
+  
+  @layer components {
+    .aspect-w-3 {
+      position: relative;
+      padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+    }
+    
+    .aspect-h-4 {
+      --tw-aspect-h: 4;
+    }
+    
+    .aspect-w-3 {
+      --tw-aspect-w: 3;
+    }
+    
+    .aspect-w-3 > * {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }

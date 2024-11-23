@@ -2,6 +2,7 @@ import React from 'react';
 import { Leaf, Compass, Mountain, Bike, TreePine, Tent, Recycle, Bird } from 'lucide-react';
 import NavBar from './NavBar';
 import Footer from './Footer';
+
 export default function Services() {
   const services = [
     {

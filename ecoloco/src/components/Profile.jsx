@@ -3,8 +3,11 @@ import { MapPin, Globe, Instagram, Twitter, Link as LinkIcon } from 'lucide-reac
 import { TripStats } from './profile/TripStats';
 import { UpcomingTrips } from './profile/UpcomingTrips';
 import { TravelPreferences } from './profile/TravelPreferences';
+import { AuthListener } from '../auth';
 
 function Profile() {
+  AuthListener();
+  
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 py-8">

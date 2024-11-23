@@ -42,7 +42,7 @@ export const AuthListener = () => {
       const unsubscribe = onAuthStateChanged(auth, (user) => {
           if (user) {
               // User is signed in, redirect to home
-              navigate("/home");
+              console.log(user);
           } else {
               // User is signed out, redirect to signin
               navigate("/login");
