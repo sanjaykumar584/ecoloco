@@ -3,7 +3,7 @@ import { Hero } from './about/Hero';
 import { Mission } from './about/Mission';
 import { Team } from './about/Team';
 import Footer from './Footer';
-import NavBar from './Navbar';
+import NavBar from './NavBar';
 
 function App() {
   return (

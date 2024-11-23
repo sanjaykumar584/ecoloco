@@ -9,6 +9,7 @@ import Signup from './components/Signup';
 
 import {AuthListener} from './auth'
 import Profile from './components/Profile';
+import Booking from './components/Booking';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/book" element={<Booking />} />
       </Routes>
     </Router>
   );
