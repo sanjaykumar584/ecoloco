@@ -27,7 +27,7 @@ function Profile() {
               className="w-32 h-32 rounded-xl border-4 border-white shadow-lg object-cover"
             />
             <div className="pb-4">
-              <h1 className="text-2xl font-bold text-white">Sarah Walker</h1>
+              <h1 className="text-2xl font-bold text-gray-800">Sarah Walker</h1>
               <p className="text-teal-50">Travel Photographer & Blogger</p>
             </div>
           </div>

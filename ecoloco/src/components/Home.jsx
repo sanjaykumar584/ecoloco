@@ -11,12 +11,12 @@ export const Home = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-16">
+      <section className="relative pb-7">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2000&q=80"
             alt="Sustainable Travel Background"
-            className="w-full h-[600px] object-cover"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40" />
         </div>
@@ -33,10 +33,11 @@ export const Home = () => {
             <p className="text-xl text-white/90 mb-8">
               Discover eco-friendly destinations and sustainable travel experiences
             </p>
+            <button className="px-6 py-3 bg-white text-green-600 rounded-lg hover:bg-gray-100 transition-colors">
+                Get Started
+            </button>
           </div>
         </div>
-
-        <SearchBar />
       </section>
 
       {/* Features Section */}
