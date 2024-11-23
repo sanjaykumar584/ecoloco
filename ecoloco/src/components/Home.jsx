@@ -4,8 +4,11 @@ import { SearchBar } from './home/SearchBar';
 import { PopularDestinations } from './home/PopularDestinations';
 import { Leaf, Recycle, TreePine, Wind } from 'lucide-react';
 import Footer from './Footer';
+import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
@@ -33,7 +36,9 @@ export const Home = () => {
             <p className="text-xl text-white/90 mb-8">
               Discover eco-friendly destinations and sustainable travel experiences
             </p>
-            <button className="px-6 py-3 bg-white text-green-600 rounded-lg hover:bg-gray-100 transition-colors">
+            <button 
+              onClick={() => {navigate('/packs')}}
+              className="px-6 py-3 bg-white text-green-600 rounded-lg hover:bg-gray-100 transition-colors">
                 Get Started
             </button>
           </div>

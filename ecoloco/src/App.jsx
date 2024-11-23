@@ -10,6 +10,7 @@ import PackageDesc from './components/PackageDesc';
 
 import {AuthListener} from './auth'
 import Profile from './components/Profile';
+import Packages from './components/Packages';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/packdesc" element={<PackageDesc />} />
+        <Route path="/packs" element={<Packages />} />
       </Routes>
     </Router>
   );
