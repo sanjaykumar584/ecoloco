@@ -11,7 +11,7 @@ import PackageDesc from './components/PackageDesc';
 import {AuthListener} from './auth'
 import Profile from './components/Profile';
 import Packages from './components/Packages';
-
+import CarbCalci from './components/CarbCalci';
 const App = () => {
   return (
     <Router>
@@ -25,6 +25,7 @@ const App = () => {
         <Route path="/profile" element={<Profile />} />
         <Route path="/packdesc" element={<PackageDesc />} />
         <Route path="/packs" element={<Packages />} />
+        <Route path="/calci" element={<CarbCalci/>} />
       </Routes>
     </Router>
   );
