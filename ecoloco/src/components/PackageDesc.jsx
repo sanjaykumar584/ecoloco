@@ -1,5 +1,6 @@
 import React from 'react';
 import { Leaf, Recycle, TreePine, Wind, Bike, Train, Home, Footprints } from 'lucide-react';
+import { AuthListener } from '../auth';
 
 const ecoFeatures = [
   { 
@@ -25,6 +26,7 @@ const ecoFeatures = [
 ];
 
 export default function PackageDesc() {
+    <AuthListener />
   return (
     <div className="min-h-screen bg-[#f4f7f4]">
       {/* Hero Section */}
